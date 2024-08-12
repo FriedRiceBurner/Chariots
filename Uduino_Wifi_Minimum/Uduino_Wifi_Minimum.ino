@@ -3,6 +3,9 @@
 #define LED 13
 String unity_input;
 Uduino_Wifi uduino("Lefty");  // Declare and name your object
+#define left 13
+#define middle 14
+#define right 27
 void setup() {
 
   Serial.begin(9600);
@@ -28,7 +31,8 @@ void loop() {
   }
 
 void hi(){
-  int motor = uduino.charToInt(uduino.getParameter(0));
+  int side= uduino.charToInt(uduino.getParameter(0));
+
 digitalWrite(motor,HIGH);
 delay(1000);
 digitalWrite(motor,LOW);
