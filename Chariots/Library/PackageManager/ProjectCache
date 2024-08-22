@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638590786642169261
-    m_Hash: 3514951126
+      ticks: 638592158278192839
+    m_Hash: 2674207228
   m_LockFileStatus:
     m_FilePath: C:/Users/josev/Documents/GitHub/Chariots/Chariots/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638590786642219547
-    m_Hash: 1561923982
+      ticks: 638592158278192839
+    m_Hash: 2470012589
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -51,6 +51,7 @@ m_ResolvedPackages:
     - 65.0.0
     - 66.0.0
     - 67.0.0
+    - 68.0.0
     compatible:
     - 59.0.0
     - 60.0.0
@@ -60,6 +61,7 @@ m_ResolvedPackages:
     - 65.0.0
     - 66.0.0
     - 67.0.0
+    - 68.0.0
     recommended: 
     deprecated: []
   dependencies:
@@ -3914,6 +3916,7 @@ m_ResolvedPackages:
     - 65.0.0
     - 66.0.0
     - 67.0.0
+    - 68.0.0
     compatible:
     - 56.0.0-preview
     - 57.0.0-preview
@@ -3924,6 +3927,7 @@ m_ResolvedPackages:
     - 65.0.0
     - 66.0.0
     - 67.0.0
+    - 68.0.0
     recommended: 
     deprecated: []
   dependencies: []
@@ -3992,6 +3996,7 @@ m_ResolvedPackages:
     - 65.0.0
     - 66.0.0
     - 67.0.0
+    - 68.0.0
     compatible:
     - 56.0.0-preview
     - 57.0.0-preview
@@ -4003,6 +4008,7 @@ m_ResolvedPackages:
     - 65.0.0
     - 66.0.0
     - 67.0.0
+    - 68.0.0
     recommended: 
     deprecated: []
   dependencies:
@@ -4083,6 +4089,7 @@ m_ResolvedPackages:
     - 65.0.0
     - 66.0.0
     - 67.0.1
+    - 68.0.0
     compatible:
     - 56.0.0-preview
     - 57.0.0-preview
@@ -4094,6 +4101,7 @@ m_ResolvedPackages:
     - 65.0.0
     - 66.0.0
     - 67.0.1
+    - 68.0.0
     recommended: 
     deprecated: []
   dependencies:
@@ -4181,6 +4189,7 @@ m_ResolvedPackages:
     - 65.0.0
     - 66.0.0
     - 67.0.0
+    - 68.0.0
     compatible:
     - 56.0.0-preview
     - 57.0.0-preview
@@ -4192,6 +4201,7 @@ m_ResolvedPackages:
     - 65.0.0
     - 66.0.0
     - 67.0.0
+    - 68.0.0
     recommended: 
     deprecated: []
   dependencies:
@@ -4266,6 +4276,8 @@ m_ResolvedPackages:
     - 65.0.0
     - 66.0.0
     - 67.0.0
+    - 68.0.0
+    - 68.0.1
     compatible:
     - 59.0.0
     - 60.0.0
@@ -4275,6 +4287,8 @@ m_ResolvedPackages:
     - 65.0.0
     - 66.0.0
     - 67.0.0
+    - 68.0.0
+    - 68.0.1
     recommended: 
     deprecated: []
   dependencies: []
@@ -4414,6 +4428,7 @@ m_ResolvedPackages:
     - 65.0.0
     - 66.0.0
     - 67.0.0
+    - 68.0.0
     compatible:
     - 60.0.0
     - 62.0.0
@@ -4422,6 +4437,7 @@ m_ResolvedPackages:
     - 65.0.0
     - 66.0.0
     - 67.0.0
+    - 68.0.0
     recommended: 
     deprecated: []
   dependencies:
@@ -4491,6 +4507,7 @@ m_ResolvedPackages:
     - 64.0.0
     - 65.0.0
     - 66.0.1
+    - 68.0.0
     compatible:
     - 57.0.0
     - 59.0.0
@@ -4499,6 +4516,7 @@ m_ResolvedPackages:
     - 64.0.0
     - 65.0.0
     - 66.0.1
+    - 68.0.0
     recommended: 
     deprecated: []
   dependencies: []
@@ -4562,6 +4580,7 @@ m_ResolvedPackages:
     - 65.0.0
     - 66.0.0
     - 67.0.0
+    - 68.0.0
     compatible:
     - 60.0.0
     - 62.0.0
@@ -4570,6 +4589,7 @@ m_ResolvedPackages:
     - 65.0.0
     - 66.0.0
     - 67.0.0
+    - 68.0.0
     recommended: 
     deprecated: []
   dependencies:

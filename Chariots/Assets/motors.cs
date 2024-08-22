@@ -6,20 +6,15 @@ using Uduino;
 #if UDUINO_READY
 public class motors : MonoBehaviour
 {
-
-    public bool left = false;
-    public bool right = false;
-    private void Update()
+        private void Update()
     {
+        UduinoDevice lefty = UduinoManager.Instance.GetBoard("Lefty");
+        UduinoDevice righty = UduinoManager.Instance.GetBoard("Righty");
 
-        if (left)
-        {
-            UduinoManager.Instance.sendCommand("hi",1);
-        }
-        if (right)
-        {
-            UduinoManager.Instance.sendCommand("hi", 2);
-        }
+       
+            UduinoManager.Instance.sendCommand(lefty,"hi",1);
+            UduinoManager.Instance.sendCommand(righty, "hi", 2);
+        
     }
 
 
