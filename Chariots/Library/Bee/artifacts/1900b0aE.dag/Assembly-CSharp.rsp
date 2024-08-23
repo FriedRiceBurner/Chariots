@@ -480,6 +480,7 @@
 "Assets/Uduino/Scripts/Extra/UduinoDebug.cs"
 "Assets/Uduino/Scripts/Extra/UduinoDebugCanvas.cs"
 "Assets/Uduino/Scripts/UduinoManager.cs"
+"Assets/visuals.cs"
 -langversion:9.0
 
 /deterministic

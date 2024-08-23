@@ -24,11 +24,11 @@ public class Playback : MonoBehaviour
         if (Play_Video){
             Videoscreen.Play();
         }
-        if (Play_Visuals)
+        if (Play_Visuals && Play_Video)
         {
             Visuals.SetActive(true);
         }
-        if (Play_Haptics) {
+        if (Play_Haptics && Play_Haptics) {
             Haptics.SetActive(true);    
         }
     
