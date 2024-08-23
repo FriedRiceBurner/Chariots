@@ -228,7 +228,6 @@ GameObject:
   - component: {fileID: 376800563}
   - component: {fileID: 376800562}
   - component: {fileID: 376800561}
-  - component: {fileID: 376800564}
   m_Layer: 0
   m_Name: '[BuildingBlock] Controller Buttons Mapper'
   m_TagString: Untagged
@@ -255,8 +254,8 @@ MonoBehaviour:
     Callback:
       m_PersistentCalls:
         m_Calls:
-        - m_Target: {fileID: 376800564}
-          m_TargetAssemblyTypeName: Log, Assembly-CSharp
+        - m_Target: {fileID: 1113237535}
+          m_TargetAssemblyTypeName: Playback, Assembly-CSharp
           m_MethodName: Count
           m_Mode: 1
           m_Arguments:
@@ -300,19 +299,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &376800564
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 376800560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c836728e85b32c49b0d37c7911f0c7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  user: Test
 --- !u!1001 &406997475
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -785,7 +771,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Left: {fileID: 2100000, guid: 9b096bd4da307fd48a9a8a8dba143068, type: 2}
   Right: {fileID: 2100000, guid: 2adabc504da23714cbae6b432b44e6fd, type: 2}
-  targetAlpha: 125
 --- !u!1 &765520051
 GameObject:
   m_ObjectHideFlags: 0
@@ -1078,6 +1063,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1113237536}
   - component: {fileID: 1113237535}
+  - component: {fileID: 1113237537}
   m_Layer: 0
   m_Name: PlayBack
   m_TagString: Untagged
@@ -1102,7 +1088,8 @@ MonoBehaviour:
   Videoscreen: {fileID: 2060413830}
   Play_Video: 0
   Play_Haptics: 0
-  Play_Visuals: 1
+  Play_Visuals: 0
+  user: Huh
 --- !u!4 &1113237536
 Transform:
   m_ObjectHideFlags: 0
@@ -1118,6 +1105,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1113237537
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1113237534}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c836728e85b32c49b0d37c7911f0c7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  user: Test
 --- !u!1 &1156941046
 GameObject:
   m_ObjectHideFlags: 0
