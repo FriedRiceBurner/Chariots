@@ -7,7 +7,7 @@ public class visuals : MonoBehaviour
     public Material Left;
     public Material Right;
     private float[] delay = { 10.0f, 60.0f, 80.0f, 85.0f, 145.0f };
-    private float targetAlpha = 125.0f;
+    private float targetAlpha = 1.0f;
 
     private Color originalColor;
 
@@ -44,7 +44,14 @@ public class visuals : MonoBehaviour
         Color oldAlpha = side.color;
 
         // Apply the new color to the material
-        side.color = newAlpha;
+        while (side.color != newAlpha)
+        {
+            Color increment;
+            increment.r = increment.b = increment.g = 0;
+            increment.a = 0.01f;
+            side.color = side.color + increment;
+            yield return new WaitForSeconds(.01f);
+        }
         // Wait for the specified amount of time
         yield return new WaitForSeconds(5);
         side.color= oldAlpha;

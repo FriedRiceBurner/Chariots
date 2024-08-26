@@ -18,8 +18,8 @@ void setup() {
   uduino.useSerial(true);         // default is true
 
   // mendatory function
-  uduino.connectWifi("TMobileWiFi-2.4GHz", "416356373337");
-  //uduino.connectWifi("NETGEAR75", "orangeballoon353");
+ // uduino.connectWifi("TMobileWiFi-2.4GHz", "416356373337");
+  uduino.connectWifi("NETGEAR75", "orangeballoon353");
   pinMode(13,OUTPUT);
   pinMode(14,OUTPUT);
   pinMode(27,OUTPUT);

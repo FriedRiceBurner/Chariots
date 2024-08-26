@@ -9,18 +9,19 @@ public class Playback : MonoBehaviour
 {
     public GameObject Haptics;
     public GameObject Visuals;
+    public GameObject Game;
     public VideoPlayer Videoscreen;
+    public GameObject[] spawners;
     public bool Play_Video;
     public bool Play_Haptics;
     public bool Play_Visuals;
+    public bool Play_Game;
     public string user;
     string User_File;
 
     // Start is called before the first frame update
     void Start()
     {
-        Haptics.SetActive(false);
-        Visuals.SetActive(false);
 
     }
 
@@ -31,14 +32,25 @@ public class Playback : MonoBehaviour
             Videoscreen.Play();
             Debug.Log("begin called now");
             begin();
-            Play_Video = false;
+         
         }
-        if (Play_Visuals && Play_Video)
+        if (Play_Game){
+            Game.SetActive(true);
+            spawners[0].SetActive(true);
+            spawners[1].SetActive(true);
+            spawners[2].SetActive(true);
+            spawners[3].SetActive(true);
+        }
+            
+        
+        if (Play_Visuals && Play_Video || Play_Game && Play_Visuals)
         {
             Visuals.SetActive(true);
+            Play_Video = false;
         }
-        if (Play_Haptics && Play_Video) {
+        if (Play_Haptics && Play_Video || Play_Game && Play_Haptics) {
             Haptics.SetActive(true);
+            Play_Video = false;
         }
     
     }

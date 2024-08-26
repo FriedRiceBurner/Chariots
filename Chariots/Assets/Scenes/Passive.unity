@@ -373,11 +373,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4, type: 3}
       propertyPath: uduinoWiFiBoards.Array.data[0].ip
-      value: 192.168.1.118
+      value: 192.168.1.12
       objectReference: {fileID: 0}
     - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4, type: 3}
       propertyPath: uduinoWiFiBoards.Array.data[1].ip
-      value: 192.168.1.100
+      value: 192.168.1.13
       objectReference: {fileID: 0}
     - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4, type: 3}
       propertyPath: activeExtentionsMap.keys.Array.size
@@ -596,8 +596,6 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1156941047}
-  - {fileID: 1585752915}
-  - {fileID: 2006870142}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &696065097
@@ -991,7 +989,9 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1585752915}
+  - {fileID: 2006870142}
   m_Father: {fileID: 1156941047}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!20 &935354361
@@ -1086,9 +1086,11 @@ MonoBehaviour:
   Haptics: {fileID: 881655074}
   Visuals: {fileID: 758526016}
   Videoscreen: {fileID: 2060413830}
+  spawners: []
   Play_Video: 0
   Play_Haptics: 0
-  Play_Visuals: 0
+  Play_Visuals: 1
+  Play_Game: 0
   user: Huh
 --- !u!4 &1113237536
 Transform:
@@ -1334,11 +1336,11 @@ Transform:
   m_GameObject: {fileID: 1585752914}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 8.17, y: 0, z: 2.2}
+  m_LocalPosition: {x: 6.65, y: 0, z: 2.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 666051631}
+  m_Father: {fileID: 935354360}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!64 &1585752916
 MeshCollider:
@@ -1533,11 +1535,11 @@ Transform:
   m_GameObject: {fileID: 2006870141}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -8.17, y: 0, z: 2.2}
+  m_LocalPosition: {x: -6.65, y: 0, z: 2.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 666051631}
+  m_Father: {fileID: 935354360}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!64 &2006870143
 MeshCollider:
@@ -1636,7 +1638,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2060413829}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 5a46504beff4c9546b61ff72879e9d71, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: ff050e67f7570a143af2047b87f85222, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
