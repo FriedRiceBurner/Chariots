@@ -6,7 +6,7 @@ public class visuals : MonoBehaviour
 {
     public Material Left;
     public Material Right;
-    private float[] delay = { 10.0f, 60.0f, 80.0f, 85.0f, 145.0f };
+    private float[] delay = { 10.0f, 70.0f, 150.0f, 230.0f, 400.0f };
     private float targetAlpha = 1.0f;
 
     private Color originalColor;

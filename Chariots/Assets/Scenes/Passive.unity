@@ -257,13 +257,31 @@ MonoBehaviour:
         - m_Target: {fileID: 1113237535}
           m_TargetAssemblyTypeName: Playback, Assembly-CSharp
           m_MethodName: Count
-          m_Mode: 1
+          m_Mode: 5
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
             m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
             m_IntArgument: 0
             m_FloatArgument: 0
-            m_StringArgument: 0
+            m_StringArgument: Left
+            m_BoolArgument: 1
+          m_CallState: 2
+  - Title: log
+    Button: 8388608
+    ButtonMode: 1
+    Callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1113237535}
+          m_TargetAssemblyTypeName: Playback, Assembly-CSharp
+          m_MethodName: Count
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Right
             m_BoolArgument: 1
           m_CallState: 2
 --- !u!114 &376800562
@@ -1063,7 +1081,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1113237536}
   - component: {fileID: 1113237535}
-  - component: {fileID: 1113237537}
   m_Layer: 0
   m_Name: PlayBack
   m_TagString: Untagged
@@ -1085,13 +1102,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Haptics: {fileID: 881655074}
   Visuals: {fileID: 758526016}
+  Game: {fileID: 1557322249}
   Videoscreen: {fileID: 2060413830}
   spawners: []
   Play_Video: 0
   Play_Haptics: 0
   Play_Visuals: 1
   Play_Game: 0
-  user: Huh
+  user: Paige
 --- !u!4 &1113237536
 Transform:
   m_ObjectHideFlags: 0
@@ -1107,19 +1125,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1113237537
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1113237534}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c836728e85b32c49b0d37c7911f0c7b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  user: Test
 --- !u!1 &1156941046
 GameObject:
   m_ObjectHideFlags: 0
@@ -1275,6 +1280,37 @@ Transform:
   - {fileID: 124248980}
   m_Father: {fileID: 1156941047}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1557322249
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1557322250}
+  m_Layer: 0
+  m_Name: dummy_game
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1557322250
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1557322249}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.15631175, y: 0.5446465, z: 0.04062099}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1579959153
 GameObject:
   m_ObjectHideFlags: 0
@@ -1321,7 +1357,7 @@ GameObject:
   - component: {fileID: 1585752917}
   - component: {fileID: 1585752916}
   m_Layer: 0
-  m_Name: Plane
+  m_Name: Right
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1359,7 +1395,7 @@ MeshCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 5
   m_Convex: 0
   m_CookingOptions: 30
@@ -1520,7 +1556,7 @@ GameObject:
   - component: {fileID: 2006870144}
   - component: {fileID: 2006870143}
   m_Layer: 0
-  m_Name: Plane (1)
+  m_Name: Left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1638,7 +1674,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2060413829}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: ff050e67f7570a143af2047b87f85222, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 5a46504beff4c9546b61ff72879e9d71, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -1693,3 +1729,4 @@ SceneRoots:
   - {fileID: 1113237536}
   - {fileID: 758526017}
   - {fileID: 696065099}
+  - {fileID: 1557322250}

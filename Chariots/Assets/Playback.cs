@@ -55,10 +55,10 @@ public class Playback : MonoBehaviour
     
     }
 
-    public void Count()
+    public void Count(string side)
     {
         string time = System.DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-        File.AppendAllText(User_File, "Passerby detected at" + time + "\n");
+        File.AppendAllText(User_File, "Passerby detected at" + time + side + "\n");
     }
     public void begin()
     {
