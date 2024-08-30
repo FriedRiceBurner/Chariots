@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class TimeToLive : MonoBehaviour
 {
+    public int time;
     // Start is called before the first frame update
     void Start()
     {
-        Destroy(gameObject,5);
+        Destroy(gameObject,time);
     }
 
     // Update is called once per frame

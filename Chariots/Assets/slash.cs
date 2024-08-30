@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class slash : MonoBehaviour
 {
-    
+
     private void OnTriggerEnter(Collider col)
     {
 
@@ -15,7 +15,8 @@ public class slash : MonoBehaviour
             //Instantiate(Particles, col.gameObject.transform.position, Quaternion.identity); 
             Destroy(col.gameObject);
             //Sound = GetComponent<AudioSource>();
-           // Sound.Play(0);
+            // Sound.Play(0);
 
         }
     }
+}

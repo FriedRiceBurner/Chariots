@@ -77,6 +77,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 63e79004a1b1cbb4ca1a221e8c7d3694, type: 3}
       insertIndex: -1
       addedObject: {fileID: 7721356006761787166}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 63e79004a1b1cbb4ca1a221e8c7d3694, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1702848224652577128}
   m_SourcePrefab: {fileID: 100100000, guid: 63e79004a1b1cbb4ca1a221e8c7d3694, type: 3}
 --- !u!1 &2553787913724732348 stripped
 GameObject:
@@ -95,6 +98,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2a559b581b85f1642a9f2cdd95a6ddb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  time: 12
 --- !u!54 &-4337978633173120405
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -144,3 +148,19 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -257223673010523232, guid: 63e79004a1b1cbb4ca1a221e8c7d3694, type: 3}
+--- !u!114 &1702848224652577128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2553787913724732348}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3265fae5907b2e34a8bc524fe88923fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fruit: {fileID: 0}
+  rotationSpeed: 3
+  speed: 1
+  Target: {fileID: 0}
