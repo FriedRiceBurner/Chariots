@@ -8,7 +8,7 @@ public class slash : MonoBehaviour
     private void OnTriggerEnter(Collider col)
     {
 
-        if (col.gameObject.tag == "Fruits")
+        if (col.gameObject.tag == "Fruit")
         {
             Debug.Log("Hit fruit");
             //yield return new WaitForSeconds(2);

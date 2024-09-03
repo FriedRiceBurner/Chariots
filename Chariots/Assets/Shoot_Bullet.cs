@@ -6,7 +6,7 @@ public class Shoot_Bullet : MonoBehaviour
 {
     public Rigidbody Bullet;
     public GameObject controller;
-    public int speed;
+    public float speed;
     // Start is called before the first frame update
     void Start()
     {

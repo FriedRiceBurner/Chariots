@@ -4,8 +4,11 @@ using UnityEngine;
 
 public class visuals : MonoBehaviour
 {
-    public Material Left;
-    public Material Right;
+    public GameObject Left;
+    public GameObject Right;
+    public Material Original;
+    public Material notification;
+    private string user;
     private float[] delay = { 10.0f, 70.0f, 150.0f, 230.0f, 400.0f };
     private float targetAlpha = 1.0f;
 
@@ -13,20 +16,32 @@ public class visuals : MonoBehaviour
 
     private void Start()
     {
+        
+        Debug.Log(user);
         Debug.Log("Here!");
-        StartCoroutine(AdjustTransparencyCoroutine(delay[0],Left));
+        StartCoroutine(AdjustTransparencyCoroutine(delay[0],Right));
         Debug.Log("Here!");
-        StartCoroutine(AdjustTransparencyCoroutine(delay[1],Right));
+        StartCoroutine(AdjustTransparencyCoroutine(delay[1],Left));
         Debug.Log("Here!");
         StartCoroutine(AdjustTransparencyCoroutine(delay[2],Left));
         Debug.Log("Here!");
-        StartCoroutine(AdjustTransparencyCoroutine(delay[3],Left));
+        StartCoroutine(AdjustTransparencyCoroutine(delay[3],Right));
         Debug.Log("Here!");
         StartCoroutine(AdjustTransparencyCoroutine(delay[4],Right));
         Debug.Log("Here!");
+        StartCoroutine(AdjustTransparencyCoroutine(delay[2],Left ));
+        Debug.Log("Here!");
+        StartCoroutine(AdjustTransparencyCoroutine(delay[4], Right));
+        Debug.Log("Here!");
+        StartCoroutine(AdjustTransparencyCoroutine(delay[0], Left));
+        Debug.Log("Here!");
+        StartCoroutine(AdjustTransparencyCoroutine(delay[1], Left));
+        Debug.Log("Here!");
+        StartCoroutine(AdjustTransparencyCoroutine(delay[3], Right));
+        Debug.Log("Here!");
     }
 
-    private IEnumerator AdjustTransparencyCoroutine(float delay,Material side)
+    private IEnumerator AdjustTransparencyCoroutine(float delay,GameObject side)
     {
         // Wait for the specified amount of time
         yield return new WaitForSeconds(delay);
@@ -35,25 +50,12 @@ public class visuals : MonoBehaviour
         StartCoroutine(AdjustTransparency(targetAlpha,side));
     }
 
-    private IEnumerator AdjustTransparency(float alpha, Material side)
+    private IEnumerator AdjustTransparency(float alpha, GameObject side)
     {
         Debug.Log("Here!");
         // Create a new color with the desired alpha value
-        Color newAlpha = side.color;
-        newAlpha.a = alpha;
-        Color oldAlpha = side.color;
-
-        // Apply the new color to the material
-        while (side.color != newAlpha)
-        {
-            Color increment;
-            increment.r = increment.b = increment.g = 0;
-            increment.a = 0.01f;
-            side.color = side.color + increment;
-            yield return new WaitForSeconds(.01f);
-        }
-        // Wait for the specified amount of time
-        yield return new WaitForSeconds(5);
-        side.color= oldAlpha;
+       side.GetComponent<MeshRenderer>().material = notification;
+            yield return new WaitForSeconds(1.0f);
     }
+
 }

@@ -13,6 +13,18 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 63e79004a1b1cbb4ca1a221e8c7d3694, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 63e79004a1b1cbb4ca1a221e8c7d3694, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 63e79004a1b1cbb4ca1a221e8c7d3694, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 63e79004a1b1cbb4ca1a221e8c7d3694, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0
       objectReference: {fileID: 0}
@@ -107,9 +119,9 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2553787913724732348}
   serializedVersion: 4
-  m_Mass: 1
+  m_Mass: 15
   m_Drag: 0
-  m_AngularDrag: 0.05
+  m_AngularDrag: 0
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -121,7 +133,7 @@ Rigidbody:
     m_Bits: 0
   m_ImplicitCom: 1
   m_ImplicitTensor: 1
-  m_UseGravity: 1
+  m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
@@ -136,7 +148,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -160,7 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3265fae5907b2e34a8bc524fe88923fa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fruit: {fileID: 0}
-  rotationSpeed: 3
-  speed: 1
-  Target: {fileID: 0}
+  fruit: {fileID: -4337978633173120405}
+  rotationSpeed: 15
+  speed: 15
+  Target: {fileID: 4853024122185584745, guid: d50da637598757344a62e30ff792c1ca, type: 3}
