@@ -5,10 +5,10 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Video;
 using UnityEngine.Playables;
+using Uduino;
 
 public class Playback : MonoBehaviour
 {
-    public GameObject Haptics;
     public GameObject Game;
     public VideoPlayer Videoscreen;
     public GameObject[] spawners;
@@ -33,6 +33,8 @@ public class Playback : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        UduinoDevice lefty = UduinoManager.Instance.GetBoard("Lefty");
+        UduinoDevice righty = UduinoManager.Instance.GetBoard("Righty");
         if (Play_Video){
             Videoscreen.Play();
             Debug.Log("begin called now");
@@ -59,7 +61,15 @@ public class Playback : MonoBehaviour
             Play_Game = false;
         }
         if (Play_Haptics && Play_Video || Play_Game && Play_Haptics) {
-            Haptics.SetActive(true);
+            if (Play_Video)
+            {
+                UduinoManager.Instance.sendCommand(lefty, "hi", 1);
+                UduinoManager.Instance.sendCommand(righty, "hi", 2);
+            }
+            if (Play_Game) {
+                UduinoManager.Instance.sendCommand(lefty, "hi", 3);
+                UduinoManager.Instance.sendCommand(righty, "hi", 4);
+            }
             Play_Video = false;
             Play_Game = false;
         }
@@ -97,8 +107,7 @@ public class Playback : MonoBehaviour
         Debug.Log("Here!");
         StartCoroutine(AdjustTransparencyCoroutine(delay[4], Right));
         Debug.Log("Here!");
-        //Left.color=baseline_material.color;
-        //Right.color=baseline_material.color;
+       
     }
 
     private IEnumerator AdjustTransparencyCoroutine(float delay, GameObject side)
