@@ -438,6 +438,8 @@
 "Assets/motors.cs"
 "Assets/movement.cs"
 "Assets/Playback.cs"
+"Assets/Polytope Studio/Lowpoly_Demos/Environment_Free/Helpers/MouseLook.cs"
+"Assets/Polytope Studio/Lowpoly_Demos/Environment_Free/Helpers/PlayerMovement.cs"
 "Assets/Shoot_Bullet.cs"
 "Assets/slash.cs"
 "Assets/TimeToLive.cs"
