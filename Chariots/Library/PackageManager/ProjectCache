@@ -52,6 +52,7 @@ m_ResolvedPackages:
     - 66.0.0
     - 67.0.0
     - 68.0.0
+    - 68.0.1
     compatible:
     - 59.0.0
     - 60.0.0
@@ -62,31 +63,40 @@ m_ResolvedPackages:
     - 66.0.0
     - 67.0.0
     - 68.0.0
+    - 68.0.1
     recommended: 
     deprecated: []
   dependencies:
+  - name: com.meta.xr.sdk.core
+    version: 67.0.0
   - name: com.meta.xr.sdk.audio
+    version: 67.0.0
+  - name: com.meta.xr.sdk.voice
+    version: 67.0.0
+  - name: com.meta.xr.simulator
+    version: 66.0.1
+  - name: com.meta.xr.sdk.haptics
+    version: 67.0.0
+  - name: com.meta.xr.mrutilitykit
+    version: 67.0.0
+  - name: com.meta.xr.sdk.platform
     version: 67.0.0
   - name: com.meta.xr.sdk.interaction
     version: 67.0.0
   - name: com.meta.xr.sdk.interaction.ovr
     version: 67.0.1
-  - name: com.meta.xr.sdk.platform
-    version: 67.0.0
+  resolvedDependencies:
   - name: com.meta.xr.sdk.core
+    version: 67.0.0
+  - name: com.meta.xr.sdk.audio
     version: 67.0.0
   - name: com.meta.xr.sdk.voice
     version: 67.0.0
-  - name: com.meta.xr.sdk.haptics
-    version: 67.0.0
   - name: com.meta.xr.simulator
     version: 66.0.1
+  - name: com.meta.xr.sdk.haptics
+    version: 67.0.0
   - name: com.meta.xr.mrutilitykit
-    version: 67.0.0
-  resolvedDependencies:
-  - name: com.meta.xr.sdk.audio
-    version: 67.0.0
-  - name: com.meta.xr.sdk.interaction
     version: 67.0.0
   - name: com.unity.textmeshpro
     version: 3.0.6
@@ -96,26 +106,18 @@ m_ResolvedPackages:
     version: 1.0.0
   - name: com.unity.modules.imgui
     version: 1.0.0
-  - name: com.meta.xr.sdk.interaction.ovr
-    version: 67.0.1
-  - name: com.meta.xr.sdk.core
-    version: 67.0.0
-  - name: com.meta.xr.sdk.platform
-    version: 67.0.0
-  - name: com.meta.xr.sdk.voice
-    version: 67.0.0
-  - name: com.meta.xr.sdk.haptics
-    version: 67.0.0
-  - name: com.meta.xr.simulator
-    version: 66.0.1
-  - name: com.meta.xr.mrutilitykit
-    version: 67.0.0
   - name: com.unity.ai.navigation
     version: 1.1.4
   - name: com.unity.modules.ai
     version: 1.0.0
   - name: com.unity.nuget.newtonsoft-json
     version: 3.2.1
+  - name: com.meta.xr.sdk.platform
+    version: 67.0.0
+  - name: com.meta.xr.sdk.interaction
+    version: 67.0.0
+  - name: com.meta.xr.sdk.interaction.ovr
+    version: 67.0.1
   keywords:
   - Oculus
   - SDK
@@ -243,6 +245,7 @@ m_ResolvedPackages:
     - 2.3.1
     - 2.4.3
     - 2.4.4
+    - 2.5.1
     compatible:
     - 2.0.5
     - 2.0.7
@@ -254,6 +257,7 @@ m_ResolvedPackages:
     - 2.3.1
     - 2.4.3
     - 2.4.4
+    - 2.5.1
     recommended: 2.0.7
     deprecated: []
   dependencies: []
@@ -708,18 +712,18 @@ m_ResolvedPackages:
     recommended: 1.7.6
     deprecated: []
   dependencies:
+  - name: com.unity.modules.audio
+    version: 1.0.0
   - name: com.unity.modules.director
     version: 1.0.0
   - name: com.unity.modules.animation
     version: 1.0.0
-  - name: com.unity.modules.audio
-    version: 1.0.0
   - name: com.unity.modules.particlesystem
     version: 1.0.0
   resolvedDependencies:
-  - name: com.unity.modules.director
-    version: 1.0.0
   - name: com.unity.modules.audio
+    version: 1.0.0
+  - name: com.unity.modules.director
     version: 1.0.0
   - name: com.unity.modules.animation
     version: 1.0.0
@@ -1014,24 +1018,24 @@ m_ResolvedPackages:
     recommended: 4.4.1
     deprecated: []
   dependencies:
-  - name: com.unity.modules.subsystems
-    version: 1.0.0
   - name: com.unity.modules.vr
     version: 1.0.0
   - name: com.unity.modules.xr
+    version: 1.0.0
+  - name: com.unity.modules.subsystems
     version: 1.0.0
   - name: com.unity.xr.legacyinputhelpers
     version: 2.1.7
   resolvedDependencies:
-  - name: com.unity.modules.subsystems
+  - name: com.unity.modules.vr
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.modules.vr
     version: 1.0.0
   - name: com.unity.modules.physics
     version: 1.0.0
   - name: com.unity.modules.xr
+    version: 1.0.0
+  - name: com.unity.modules.subsystems
     version: 1.0.0
   - name: com.unity.xr.legacyinputhelpers
     version: 2.1.10
@@ -1186,15 +1190,15 @@ m_ResolvedPackages:
   resolvedDependencies:
   - name: com.unity.xr.management
     version: 4.5.0
-  - name: com.unity.modules.subsystems
+  - name: com.unity.modules.vr
     version: 1.0.0
   - name: com.unity.modules.jsonserialize
-    version: 1.0.0
-  - name: com.unity.modules.vr
     version: 1.0.0
   - name: com.unity.modules.physics
     version: 1.0.0
   - name: com.unity.modules.xr
+    version: 1.0.0
+  - name: com.unity.modules.subsystems
     version: 1.0.0
   - name: com.unity.xr.legacyinputhelpers
     version: 2.1.10
@@ -3885,6 +3889,87 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
+- packageId: com.meta.xr.sdk.core@67.0.0
+  testable: 0
+  isDirectDependency: 0
+  version: 67.0.0
+  source: 1
+  resolvedPath: C:\Users\josev\Documents\GitHub\Chariots\Chariots\Library\PackageCache\com.meta.xr.sdk.core@67.0.0
+  assetPath: Packages/com.meta.xr.sdk.core
+  name: com.meta.xr.sdk.core
+  displayName: Meta XR Core SDK
+  author:
+    name: Meta Platforms, Inc.
+    email: 
+    url: https://developer.oculus.com/
+  category: 
+  type: assets
+  description: Meta XR Core SDK package provides the latest features to create immersive
+    experiences for Meta XR devices.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 59.0.0
+    - 60.0.0
+    - 62.0.0
+    - 63.0.0
+    - 64.0.0
+    - 65.0.0
+    - 66.0.0
+    - 67.0.0
+    - 68.0.0
+    - 68.0.1
+    - 68.0.2
+    compatible:
+    - 59.0.0
+    - 60.0.0
+    - 62.0.0
+    - 63.0.0
+    - 64.0.0
+    - 65.0.0
+    - 66.0.0
+    - 67.0.0
+    - 68.0.0
+    - 68.0.1
+    - 68.0.2
+    recommended: 
+    deprecated: []
+  dependencies: []
+  resolvedDependencies: []
+  keywords:
+  - Quest
+  - SDK
+  - Oculus
+  - Meta
+  - Utilities
+  - XR
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 1
+  datePublishedTicks: 638569443820000000
+  documentationUrl: https://developer.oculus.com/documentation/unity/
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
 - packageId: com.meta.xr.sdk.audio@67.0.0
   testable: 0
   isDirectDependency: 0
@@ -3965,23 +4050,23 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-- packageId: com.meta.xr.sdk.interaction@67.0.0
+- packageId: com.meta.xr.sdk.voice@67.0.0
   testable: 0
   isDirectDependency: 0
   version: 67.0.0
   source: 1
-  resolvedPath: C:\Users\josev\Documents\GitHub\Chariots\Chariots\Library\PackageCache\com.meta.xr.sdk.interaction@67.0.0
-  assetPath: Packages/com.meta.xr.sdk.interaction
-  name: com.meta.xr.sdk.interaction
-  displayName: Meta XR Interaction SDK Essentials
+  resolvedPath: C:\Users\josev\Documents\GitHub\Chariots\Chariots\Library\PackageCache\com.meta.xr.sdk.voice@67.0.0
+  assetPath: Packages/com.meta.xr.sdk.voice
+  name: com.meta.xr.sdk.voice
+  displayName: Meta - Voice SDK - Immersive Voice Commands
   author:
-    name: Meta Platforms, Inc.
+    name: Meta - Voice SDK
     email: 
-    url: https://developer.oculus.com/
+    url: https://wit.ai
   category: 
   type: assets
-  description: Provides the core implementations of all the provided interaction
-    models along with necessary shaders, materials, and prefabs.
+  description: Voice SDK enables natural voice interactions for AR/VR apps, powered
+    by Wit.ai.
   status: 0
   errors: []
   versions:
@@ -3990,48 +4075,29 @@ m_ResolvedPackages:
     - 57.0.0-preview
     - 59.0.0
     - 60.0.0
-    - 62.0.0
     - 63.0.0
     - 64.0.0
     - 65.0.0
     - 66.0.0
     - 67.0.0
-    - 68.0.0
     compatible:
     - 56.0.0-preview
     - 57.0.0-preview
     - 59.0.0
     - 60.0.0
-    - 62.0.0
     - 63.0.0
     - 64.0.0
     - 65.0.0
     - 66.0.0
     - 67.0.0
-    - 68.0.0
     recommended: 
     deprecated: []
-  dependencies:
-  - name: com.unity.textmeshpro
-    version: 3.0.6
-  - name: com.unity.ugui
-    version: 1.0.0
-  resolvedDependencies:
-  - name: com.unity.textmeshpro
-    version: 3.0.6
-  - name: com.unity.ugui
-    version: 1.0.0
-  - name: com.unity.modules.ui
-    version: 1.0.0
-  - name: com.unity.modules.imgui
-    version: 1.0.0
+  dependencies: []
+  resolvedDependencies: []
   keywords:
-  - Oculus
-  - Quest
   - Meta
   - SDK
-  - Interaction
-  - XR
+  - Voice
   registry:
     id: main
     name: 
@@ -4042,8 +4108,8 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 1
-  datePublishedTicks: 638569471890000000
-  documentationUrl: https://developer.oculus.com/documentation/unity/unity-isdk-interaction-sdk-overview/
+  datePublishedTicks: 638569487830000000
+  documentationUrl: https://developer.oculus.com/documentation/unity/
   hasRepository: 0
   repository:
     type: 
@@ -4058,79 +4124,53 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-- packageId: com.meta.xr.sdk.interaction.ovr@67.0.1
+- packageId: com.meta.xr.simulator@66.0.1
   testable: 0
   isDirectDependency: 0
-  version: 67.0.1
+  version: 66.0.1
   source: 1
-  resolvedPath: C:\Users\josev\Documents\GitHub\Chariots\Chariots\Library\PackageCache\com.meta.xr.sdk.interaction.ovr@67.0.1
-  assetPath: Packages/com.meta.xr.sdk.interaction.ovr
-  name: com.meta.xr.sdk.interaction.ovr
-  displayName: "Meta XR Interaction \u200BSDK"
+  resolvedPath: C:\Users\josev\Documents\GitHub\Chariots\Chariots\Library\PackageCache\com.meta.xr.simulator@66.0.1
+  assetPath: Packages/com.meta.xr.simulator
+  name: com.meta.xr.simulator
+  displayName: Meta XR Simulator
   author:
     name: Meta Platforms, Inc.
     email: 
     url: https://developer.oculus.com/
   category: 
   type: assets
-  description: This package allows Interaction SDK to interface with OVRPlugin. Use
-    this package if you are using OVRPlugin or the Core SDK package.
+  description: Meta XR Simulator allows developers to preview their VR changes without
+    needing a physical device.
   status: 0
   errors: []
   versions:
     all:
-    - 56.0.0-preview
-    - 57.0.0-preview
+    - 57.0.0
     - 59.0.0
     - 60.0.0
     - 62.0.0
-    - 63.0.0
     - 64.0.0
     - 65.0.0
-    - 66.0.0
-    - 67.0.1
+    - 66.0.1
     - 68.0.0
     compatible:
-    - 56.0.0-preview
-    - 57.0.0-preview
+    - 57.0.0
     - 59.0.0
     - 60.0.0
     - 62.0.0
-    - 63.0.0
     - 64.0.0
     - 65.0.0
-    - 66.0.0
-    - 67.0.1
+    - 66.0.1
     - 68.0.0
     recommended: 
     deprecated: []
-  dependencies:
-  - name: com.meta.xr.sdk.interaction
-    version: 67.0.0
-  - name: com.meta.xr.sdk.core
-    version: 67.0.0
-  resolvedDependencies:
-  - name: com.meta.xr.sdk.interaction
-    version: 67.0.0
-  - name: com.unity.textmeshpro
-    version: 3.0.6
-  - name: com.unity.ugui
-    version: 1.0.0
-  - name: com.unity.modules.ui
-    version: 1.0.0
-  - name: com.unity.modules.imgui
-    version: 1.0.0
-  - name: com.meta.xr.sdk.core
-    version: 67.0.0
+  dependencies: []
+  resolvedDependencies: []
   keywords:
-  - Samples
-  - Quest
-  - OVR
-  - XR
-  - Interaction
-  - Meta
+  - XrSim
   - Oculus
-  - SDK
+  - Meta
+  - Quest
   registry:
     id: main
     name: 
@@ -4141,8 +4181,185 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 1
-  datePublishedTicks: 638575179770000000
-  documentationUrl: https://developer.oculus.com/documentation/unity/unity-isdk-interaction-sdk-overview/
+  datePublishedTicks: 638549554470000000
+  documentationUrl: https://developer.oculus.com/documentation/unity/
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+- packageId: com.meta.xr.sdk.haptics@67.0.0
+  testable: 0
+  isDirectDependency: 0
+  version: 67.0.0
+  source: 1
+  resolvedPath: C:\Users\josev\Documents\GitHub\Chariots\Chariots\Library\PackageCache\com.meta.xr.sdk.haptics@67.0.0
+  assetPath: Packages/com.meta.xr.sdk.haptics
+  name: com.meta.xr.sdk.haptics
+  displayName: Meta XR Haptics SDK
+  author:
+    name: Meta Platforms, Inc.
+    email: 
+    url: https://developer.oculus.com/
+  category: 
+  type: assets
+  description: SDK for playback of haptics created in Meta Haptics Studio on Quest
+    devices
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 60.0.0
+    - 62.0.0
+    - 63.0.0
+    - 64.0.0
+    - 65.0.0
+    - 66.0.0
+    - 67.0.0
+    - 68.0.0
+    - 68.0.1
+    compatible:
+    - 60.0.0
+    - 62.0.0
+    - 63.0.0
+    - 64.0.0
+    - 65.0.0
+    - 66.0.0
+    - 67.0.0
+    - 68.0.0
+    - 68.0.1
+    recommended: 
+    deprecated: []
+  dependencies:
+  - name: com.meta.xr.sdk.core
+    version: 67.0.0
+  resolvedDependencies:
+  - name: com.meta.xr.sdk.core
+    version: 67.0.0
+  keywords:
+  - Oculus
+  - Haptics
+  - Quest
+  - SDK
+  - Meta
+  - XR
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 1
+  datePublishedTicks: 638570118000000000
+  documentationUrl: https://developer.oculus.com/documentation/unity/
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+- packageId: com.meta.xr.mrutilitykit@67.0.0
+  testable: 0
+  isDirectDependency: 0
+  version: 67.0.0
+  source: 1
+  resolvedPath: C:\Users\josev\Documents\GitHub\Chariots\Chariots\Library\PackageCache\com.meta.xr.mrutilitykit@67.0.0
+  assetPath: Packages/com.meta.xr.mrutilitykit
+  name: com.meta.xr.mrutilitykit
+  displayName: Meta MR Utility Kit
+  author:
+    name: Meta Platforms, Inc.
+    email: 
+    url: https://developer.oculus.com/
+  category: 
+  type: assets
+  description: Helper tools & functions to simplify development with Scene API. Works
+    on Mac & PC, without a device attached.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 60.0.0
+    - 62.0.0
+    - 63.0.0
+    - 64.0.0
+    - 65.0.0
+    - 66.0.0
+    - 67.0.0
+    - 68.0.0
+    - 68.0.1
+    compatible:
+    - 60.0.0
+    - 62.0.0
+    - 63.0.0
+    - 64.0.0
+    - 65.0.0
+    - 66.0.0
+    - 67.0.0
+    - 68.0.0
+    - 68.0.1
+    recommended: 
+    deprecated: []
+  dependencies:
+  - name: com.meta.xr.sdk.core
+    version: 67.0.0
+  - name: com.unity.textmeshpro
+    version: 3.0.6
+  - name: com.unity.ai.navigation
+    version: 1.1.4
+  - name: com.unity.nuget.newtonsoft-json
+    version: 3.0.2
+  resolvedDependencies:
+  - name: com.meta.xr.sdk.core
+    version: 67.0.0
+  - name: com.unity.textmeshpro
+    version: 3.0.6
+  - name: com.unity.ugui
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.ai.navigation
+    version: 1.1.4
+  - name: com.unity.modules.ai
+    version: 1.0.0
+  - name: com.unity.nuget.newtonsoft-json
+    version: 3.2.1
+  keywords:
+  - Meta
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 1
+  datePublishedTicks: 638570115300000000
+  documentationUrl: https://developer.oculus.com/documentation/unity/
   hasRepository: 0
   repository:
     type: 
@@ -4247,27 +4464,29 @@ m_ResolvedPackages:
     deprecationMessage: 
   isDeprecated: 0
   deprecationMessage: 
-- packageId: com.meta.xr.sdk.core@67.0.0
+- packageId: com.meta.xr.sdk.interaction@67.0.0
   testable: 0
   isDirectDependency: 0
   version: 67.0.0
   source: 1
-  resolvedPath: C:\Users\josev\Documents\GitHub\Chariots\Chariots\Library\PackageCache\com.meta.xr.sdk.core@67.0.0
-  assetPath: Packages/com.meta.xr.sdk.core
-  name: com.meta.xr.sdk.core
-  displayName: Meta XR Core SDK
+  resolvedPath: C:\Users\josev\Documents\GitHub\Chariots\Chariots\Library\PackageCache\com.meta.xr.sdk.interaction@67.0.0
+  assetPath: Packages/com.meta.xr.sdk.interaction
+  name: com.meta.xr.sdk.interaction
+  displayName: Meta XR Interaction SDK Essentials
   author:
     name: Meta Platforms, Inc.
     email: 
     url: https://developer.oculus.com/
   category: 
   type: assets
-  description: Meta XR Core SDK package provides the latest features to create immersive
-    experiences for Meta XR devices.
+  description: Provides the core implementations of all the provided interaction
+    models along with necessary shaders, materials, and prefabs.
   status: 0
   errors: []
   versions:
     all:
+    - 56.0.0-preview
+    - 57.0.0-preview
     - 59.0.0
     - 60.0.0
     - 62.0.0
@@ -4279,6 +4498,8 @@ m_ResolvedPackages:
     - 68.0.0
     - 68.0.1
     compatible:
+    - 56.0.0-preview
+    - 57.0.0-preview
     - 59.0.0
     - 60.0.0
     - 62.0.0
@@ -4291,335 +4512,27 @@ m_ResolvedPackages:
     - 68.0.1
     recommended: 
     deprecated: []
-  dependencies: []
-  resolvedDependencies: []
-  keywords:
-  - Quest
-  - SDK
-  - Oculus
-  - Meta
-  - Utilities
-  - XR
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 1
-  isAssetStorePackage: 1
-  datePublishedTicks: 638569443820000000
-  documentationUrl: https://developer.oculus.com/documentation/unity/
-  hasRepository: 0
-  repository:
-    type: 
-    url: 
-    revision: 
-    path: 
-  unityLifecycle:
-    version: 
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-- packageId: com.meta.xr.sdk.voice@67.0.0
-  testable: 0
-  isDirectDependency: 0
-  version: 67.0.0
-  source: 1
-  resolvedPath: C:\Users\josev\Documents\GitHub\Chariots\Chariots\Library\PackageCache\com.meta.xr.sdk.voice@67.0.0
-  assetPath: Packages/com.meta.xr.sdk.voice
-  name: com.meta.xr.sdk.voice
-  displayName: Meta - Voice SDK - Immersive Voice Commands
-  author:
-    name: Meta - Voice SDK
-    email: 
-    url: https://wit.ai
-  category: 
-  type: assets
-  description: Voice SDK enables natural voice interactions for AR/VR apps, powered
-    by Wit.ai.
-  status: 0
-  errors: []
-  versions:
-    all:
-    - 56.0.0-preview
-    - 57.0.0-preview
-    - 59.0.0
-    - 60.0.0
-    - 63.0.0
-    - 64.0.0
-    - 65.0.0
-    - 66.0.0
-    - 67.0.0
-    compatible:
-    - 56.0.0-preview
-    - 57.0.0-preview
-    - 59.0.0
-    - 60.0.0
-    - 63.0.0
-    - 64.0.0
-    - 65.0.0
-    - 66.0.0
-    - 67.0.0
-    recommended: 
-    deprecated: []
-  dependencies: []
-  resolvedDependencies: []
-  keywords:
-  - Meta
-  - SDK
-  - Voice
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 1
-  isAssetStorePackage: 1
-  datePublishedTicks: 638569487830000000
-  documentationUrl: https://developer.oculus.com/documentation/unity/
-  hasRepository: 0
-  repository:
-    type: 
-    url: 
-    revision: 
-    path: 
-  unityLifecycle:
-    version: 
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-- packageId: com.meta.xr.sdk.haptics@67.0.0
-  testable: 0
-  isDirectDependency: 0
-  version: 67.0.0
-  source: 1
-  resolvedPath: C:\Users\josev\Documents\GitHub\Chariots\Chariots\Library\PackageCache\com.meta.xr.sdk.haptics@67.0.0
-  assetPath: Packages/com.meta.xr.sdk.haptics
-  name: com.meta.xr.sdk.haptics
-  displayName: Meta XR Haptics SDK
-  author:
-    name: Meta Platforms, Inc.
-    email: 
-    url: https://developer.oculus.com/
-  category: 
-  type: assets
-  description: SDK for playback of haptics created in Meta Haptics Studio on Quest
-    devices
-  status: 0
-  errors: []
-  versions:
-    all:
-    - 60.0.0
-    - 62.0.0
-    - 63.0.0
-    - 64.0.0
-    - 65.0.0
-    - 66.0.0
-    - 67.0.0
-    - 68.0.0
-    compatible:
-    - 60.0.0
-    - 62.0.0
-    - 63.0.0
-    - 64.0.0
-    - 65.0.0
-    - 66.0.0
-    - 67.0.0
-    - 68.0.0
-    recommended: 
-    deprecated: []
   dependencies:
-  - name: com.meta.xr.sdk.core
-    version: 67.0.0
-  resolvedDependencies:
-  - name: com.meta.xr.sdk.core
-    version: 67.0.0
-  keywords:
-  - Oculus
-  - Haptics
-  - Quest
-  - SDK
-  - Meta
-  - XR
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 1
-  isAssetStorePackage: 1
-  datePublishedTicks: 638570118000000000
-  documentationUrl: https://developer.oculus.com/documentation/unity/
-  hasRepository: 0
-  repository:
-    type: 
-    url: 
-    revision: 
-    path: 
-  unityLifecycle:
-    version: 
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-- packageId: com.meta.xr.simulator@66.0.1
-  testable: 0
-  isDirectDependency: 0
-  version: 66.0.1
-  source: 1
-  resolvedPath: C:\Users\josev\Documents\GitHub\Chariots\Chariots\Library\PackageCache\com.meta.xr.simulator@66.0.1
-  assetPath: Packages/com.meta.xr.simulator
-  name: com.meta.xr.simulator
-  displayName: Meta XR Simulator
-  author:
-    name: Meta Platforms, Inc.
-    email: 
-    url: https://developer.oculus.com/
-  category: 
-  type: assets
-  description: Meta XR Simulator allows developers to preview their VR changes without
-    needing a physical device.
-  status: 0
-  errors: []
-  versions:
-    all:
-    - 57.0.0
-    - 59.0.0
-    - 60.0.0
-    - 62.0.0
-    - 64.0.0
-    - 65.0.0
-    - 66.0.1
-    - 68.0.0
-    compatible:
-    - 57.0.0
-    - 59.0.0
-    - 60.0.0
-    - 62.0.0
-    - 64.0.0
-    - 65.0.0
-    - 66.0.1
-    - 68.0.0
-    recommended: 
-    deprecated: []
-  dependencies: []
-  resolvedDependencies: []
-  keywords:
-  - XrSim
-  - Oculus
-  - Meta
-  - Quest
-  registry:
-    id: main
-    name: 
-    url: https://packages.unity.com
-    scopes: []
-    isDefault: 1
-    capabilities: 7
-    configSource: 0
-  hideInEditor: 1
-  isAssetStorePackage: 1
-  datePublishedTicks: 638549554470000000
-  documentationUrl: https://developer.oculus.com/documentation/unity/
-  hasRepository: 0
-  repository:
-    type: 
-    url: 
-    revision: 
-    path: 
-  unityLifecycle:
-    version: 
-    nextVersion: 
-    recommendedVersion: 
-    isDeprecated: 0
-    deprecationMessage: 
-  isDeprecated: 0
-  deprecationMessage: 
-- packageId: com.meta.xr.mrutilitykit@67.0.0
-  testable: 0
-  isDirectDependency: 0
-  version: 67.0.0
-  source: 1
-  resolvedPath: C:\Users\josev\Documents\GitHub\Chariots\Chariots\Library\PackageCache\com.meta.xr.mrutilitykit@67.0.0
-  assetPath: Packages/com.meta.xr.mrutilitykit
-  name: com.meta.xr.mrutilitykit
-  displayName: Meta MR Utility Kit
-  author:
-    name: Meta Platforms, Inc.
-    email: 
-    url: https://developer.oculus.com/
-  category: 
-  type: assets
-  description: Helper tools & functions to simplify development with Scene API. Works
-    on Mac & PC, without a device attached.
-  status: 0
-  errors: []
-  versions:
-    all:
-    - 60.0.0
-    - 62.0.0
-    - 63.0.0
-    - 64.0.0
-    - 65.0.0
-    - 66.0.0
-    - 67.0.0
-    - 68.0.0
-    compatible:
-    - 60.0.0
-    - 62.0.0
-    - 63.0.0
-    - 64.0.0
-    - 65.0.0
-    - 66.0.0
-    - 67.0.0
-    - 68.0.0
-    recommended: 
-    deprecated: []
-  dependencies:
-  - name: com.unity.ai.navigation
-    version: 1.1.4
-  - name: com.unity.nuget.newtonsoft-json
-    version: 3.0.2
-  - name: com.meta.xr.sdk.core
-    version: 67.0.0
-  - name: com.unity.textmeshpro
-    version: 3.0.6
-  resolvedDependencies:
-  - name: com.unity.ai.navigation
-    version: 1.1.4
-  - name: com.unity.modules.ai
+  - name: com.unity.ugui
     version: 1.0.0
-  - name: com.unity.nuget.newtonsoft-json
-    version: 3.2.1
-  - name: com.meta.xr.sdk.core
-    version: 67.0.0
   - name: com.unity.textmeshpro
     version: 3.0.6
+  resolvedDependencies:
   - name: com.unity.ugui
     version: 1.0.0
   - name: com.unity.modules.ui
     version: 1.0.0
   - name: com.unity.modules.imgui
     version: 1.0.0
+  - name: com.unity.textmeshpro
+    version: 3.0.6
   keywords:
+  - Oculus
+  - Quest
   - Meta
+  - SDK
+  - Interaction
+  - XR
   registry:
     id: main
     name: 
@@ -4630,8 +4543,109 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 1
-  datePublishedTicks: 638570115300000000
-  documentationUrl: https://developer.oculus.com/documentation/unity/
+  datePublishedTicks: 638569471890000000
+  documentationUrl: https://developer.oculus.com/documentation/unity/unity-isdk-interaction-sdk-overview/
+  hasRepository: 0
+  repository:
+    type: 
+    url: 
+    revision: 
+    path: 
+  unityLifecycle:
+    version: 
+    nextVersion: 
+    recommendedVersion: 
+    isDeprecated: 0
+    deprecationMessage: 
+  isDeprecated: 0
+  deprecationMessage: 
+- packageId: com.meta.xr.sdk.interaction.ovr@67.0.1
+  testable: 0
+  isDirectDependency: 0
+  version: 67.0.1
+  source: 1
+  resolvedPath: C:\Users\josev\Documents\GitHub\Chariots\Chariots\Library\PackageCache\com.meta.xr.sdk.interaction.ovr@67.0.1
+  assetPath: Packages/com.meta.xr.sdk.interaction.ovr
+  name: com.meta.xr.sdk.interaction.ovr
+  displayName: "Meta XR Interaction \u200BSDK"
+  author:
+    name: Meta Platforms, Inc.
+    email: 
+    url: https://developer.oculus.com/
+  category: 
+  type: assets
+  description: This package allows Interaction SDK to interface with OVRPlugin. Use
+    this package if you are using OVRPlugin or the Core SDK package.
+  status: 0
+  errors: []
+  versions:
+    all:
+    - 56.0.0-preview
+    - 57.0.0-preview
+    - 59.0.0
+    - 60.0.0
+    - 62.0.0
+    - 63.0.0
+    - 64.0.0
+    - 65.0.0
+    - 66.0.0
+    - 67.0.1
+    - 68.0.0
+    - 68.0.1
+    compatible:
+    - 56.0.0-preview
+    - 57.0.0-preview
+    - 59.0.0
+    - 60.0.0
+    - 62.0.0
+    - 63.0.0
+    - 64.0.0
+    - 65.0.0
+    - 66.0.0
+    - 67.0.1
+    - 68.0.0
+    - 68.0.1
+    recommended: 
+    deprecated: []
+  dependencies:
+  - name: com.meta.xr.sdk.core
+    version: 67.0.0
+  - name: com.meta.xr.sdk.interaction
+    version: 67.0.0
+  resolvedDependencies:
+  - name: com.meta.xr.sdk.core
+    version: 67.0.0
+  - name: com.meta.xr.sdk.interaction
+    version: 67.0.0
+  - name: com.unity.ugui
+    version: 1.0.0
+  - name: com.unity.modules.ui
+    version: 1.0.0
+  - name: com.unity.modules.imgui
+    version: 1.0.0
+  - name: com.unity.textmeshpro
+    version: 3.0.6
+  keywords:
+  - Samples
+  - Quest
+  - OVR
+  - XR
+  - Interaction
+  - Meta
+  - Oculus
+  - SDK
+  registry:
+    id: main
+    name: 
+    url: https://packages.unity.com
+    scopes: []
+    isDefault: 1
+    capabilities: 7
+    configSource: 0
+  hideInEditor: 1
+  isAssetStorePackage: 1
+  datePublishedTicks: 638575179770000000
+  documentationUrl: https://developer.oculus.com/documentation/unity/unity-isdk-interaction-sdk-overview/
   hasRepository: 0
   repository:
     type: 
@@ -4814,6 +4828,7 @@ m_ResolvedPackages:
     - 2.0.0-pre.4
     - 2.0.0
     - 2.0.3
+    - 2.0.4
     compatible:
     - 1.1.4
     - 1.1.5

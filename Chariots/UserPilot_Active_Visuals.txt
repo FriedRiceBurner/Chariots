@@ -1,8 +1,1 @@
-Game started at2024-09-03 13:54:16Passerby detected at2024-09-03 13:54:46Left
-Passerby detected at2024-09-03 13:55:37Left
-Passerby detected at2024-09-03 13:58:55Right
-Passerby detected at2024-09-03 13:59:54Right
-Passerby detected at2024-09-03 14:00:21Left
-Passerby detected at2024-09-03 14:01:05Right
-Passerby detected at2024-09-03 14:01:31Left
-Passerby detected at2024-09-03 14:02:46Left
+Game started at2024-09-07 12:43:12
