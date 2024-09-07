@@ -7,6 +7,8 @@ public class Shoot_Bullet : MonoBehaviour
     public Rigidbody Bullet;
     public GameObject controller;
     public float speed;
+    public AudioSource sound;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,8 +23,9 @@ public class Shoot_Bullet : MonoBehaviour
 
     
     public void Shoot()
-    { 
-     // Spawn the object at the spawn point
+    {
+        sound.Play(0);
+        // Spawn the object at the spawn point
         var shuriken = Instantiate(Bullet, controller.transform.position, controller.transform.rotation);
         shuriken.AddForce(controller.transform.forward * speed);
     }

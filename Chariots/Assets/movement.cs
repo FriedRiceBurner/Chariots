@@ -11,6 +11,7 @@ public class movement : MonoBehaviour
     public float speed = 1f;
     //public GameObject Spawnpoint;
     public GameObject Target;
+    public AudioSource sound;
     //public int rate_of_fire;
 
     void Start()
@@ -28,4 +29,14 @@ public class movement : MonoBehaviour
         fruit.transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
         fruit.AddForce(transform.forward * speed);
     }
+
+    private void OnTriggerEnter(Collider col)
+    {
+
+        if (col.gameObject.tag != "Fruit")
+        {
+            sound.Play(0);
+        }
+    }
+
 }
