@@ -1054,18 +1054,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01b744246d6ee7b4695b99d10f67ca99, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Haptics: {fileID: 881655074}
-  Visuals: {fileID: 0}
   Game: {fileID: 1557322249}
   Videoscreen: {fileID: 2060413830}
   spawners: []
   Play_Video: 0
   Play_Haptics: 0
-  Play_Visuals: 0
+  Play_Visuals: 1
   Left: {fileID: 2006870141}
   Right: {fileID: 1585752914}
   Play_Game: 0
-  user: Pilot
+  user: Testingtimes
 --- !u!4 &1113237536
 Transform:
   m_ObjectHideFlags: 0

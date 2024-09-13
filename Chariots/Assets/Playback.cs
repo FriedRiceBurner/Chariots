@@ -6,6 +6,8 @@ using UnityEngine;
 using UnityEngine.Video;
 using UnityEngine.Playables;
 using Uduino;
+using UnityEngine.UIElements;
+using System;
 
 public class Playback : MonoBehaviour
 {
@@ -20,8 +22,10 @@ public class Playback : MonoBehaviour
     public bool Play_Game;
     public string user;
     string User_File;
-    private float[] delay = { 10.0f, 70.0f, 150.0f, 230.0f, 400.0f };
-
+    private float[] delay = { 100.0f, 110.0f, 120.0f, 130.0f, 90.0f };
+    private float[] delay2 = { 80.0f, 95.0f, 115.0f, 135.0f, 125.0f };
+    private string start_time;
+    private DateTime Starting_time;
     private Color originalColor;
 
     // Start is called before the first frame update
@@ -54,11 +58,17 @@ public class Playback : MonoBehaviour
         }
             
         
-        if (Play_Visuals && Play_Video || Play_Game && Play_Visuals)
+        if (Play_Visuals && Play_Video)
         {
-            Visual_stimuli();
+            Visual_stimuli(1);
             Play_Video = false;
+           
+        }
+        if (Play_Visuals && Play_Game)
+        {
+            Visual_stimuli(2);
             Play_Game = false;
+
         }
         if (Play_Haptics && Play_Video || Play_Game && Play_Haptics) {
             if (Play_Video)
@@ -78,36 +88,47 @@ public class Playback : MonoBehaviour
     public void Count(string side)
     {
         string time = System.DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
-        File.AppendAllText(User_File, "Passerby detected at" + time + side + "\n");
+        DateTime intrustion_time = DateTime.Parse(time);
+        TimeSpan x = intrustion_time - Starting_time;
+        File.AppendAllText(User_File, "Passerby detected at" + x + " seconds on the " +side + "\n");
     }
     public void begin(int mode)
     {
         User_File = string.Concat("User", user, ".txt");
-        string time = System.DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+        start_time = System.DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+        Starting_time = DateTime.Parse(start_time);
         if (mode == 1)
         {
-            File.WriteAllText(User_File, "Video started at" + time);
+            File.WriteAllText(User_File, "Video started at" + start_time+ "\n");
         }
         else
         {
-            File.WriteAllText(User_File, "Game started at" + time);
+            File.WriteAllText(User_File, "Game started at" + start_time + "\n");
         }
     }
 
-    public void Visual_stimuli()
+    public void Visual_stimuli(int scenario)
     {
-        Debug.Log("Here!");
-        StartCoroutine(AdjustTransparencyCoroutine(delay[0], Right));
-        Debug.Log("Here!");
-        StartCoroutine(AdjustTransparencyCoroutine(delay[1], Left));
-        Debug.Log("Here!");
-        StartCoroutine(AdjustTransparencyCoroutine(delay[2], Left));
-        Debug.Log("Here!");
-        StartCoroutine(AdjustTransparencyCoroutine(delay[3], Right));
-        Debug.Log("Here!");
-        StartCoroutine(AdjustTransparencyCoroutine(delay[4], Right));
-        Debug.Log("Here!");
-       
+        GameObject[] side = null;
+        if (scenario == 1)
+        {
+            side = new GameObject[] { Left, Right, Right, Left, Right };
+            for (int i = 0; i < delay.Length; i++)
+            {
+                Debug.Log("Here!");
+                StartCoroutine(AdjustTransparencyCoroutine(delay[i], side[i]));
+            }
+        }
+
+        if (scenario == 2)
+        {
+            side = new GameObject[] { Right, Left, Left, Right, Left };
+            for (int i = 0; i < delay2.Length; i++)
+            {
+                Debug.Log("Here!");
+                StartCoroutine(AdjustTransparencyCoroutine(delay[i], side[i]));
+            }
+        }
     }
 
     private IEnumerator AdjustTransparencyCoroutine(float delay, GameObject side)

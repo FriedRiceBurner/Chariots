@@ -571,7 +571,7 @@ LineRenderer:
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 0, b: 0, a: 1}
-      key1: {r: 1, g: 0, b: 0, a: 0.5686275}
+      key1: {r: 1, g: 0, b: 0, a: 0}
       key2: {r: 1, g: 1, b: 1, a: 1}
       key3: {r: 0, g: 0, b: 0, a: 0}
       key4: {r: 0, g: 0, b: 0, a: 0}
@@ -587,7 +587,7 @@ LineRenderer:
       ctime6: 0
       ctime7: 0
       atime0: 0
-      atime1: 65535
+      atime1: 53199
       atime2: 62837
       atime3: 0
       atime4: 0
@@ -1214,7 +1214,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 380a61624a607f042ab5e96218f37633, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -1451,6 +1451,10 @@ PrefabInstance:
       propertyPath: Right
       value: 
       objectReference: {fileID: 78316295}
+    - target: {fileID: 1312114207183630935, guid: f65b8cc998b1f7b4dbd9068b730fe52d, type: 3}
+      propertyPath: Play_Visuals
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1312114207183630935, guid: f65b8cc998b1f7b4dbd9068b730fe52d, type: 3}
       propertyPath: spawners.Array.data[0]
       value: 

@@ -179,7 +179,7 @@ MonoBehaviour:
   rotationSpeed: 15
   speed: 30
   Target: {fileID: 4853024122185584745, guid: d50da637598757344a62e30ff792c1ca, type: 3}
-  sound: {fileID: 0}
+  sound: {fileID: 6690286732455693248}
 --- !u!82 &6690286732455693248
 AudioSource:
   m_ObjectHideFlags: 0

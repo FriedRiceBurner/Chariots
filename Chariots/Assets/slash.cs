@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class slash : MonoBehaviour
 {
-
+    private AudioSource Sound;
     private void OnTriggerEnter(Collider col)
     {
 
@@ -13,9 +13,10 @@ public class slash : MonoBehaviour
             Debug.Log("Hit fruit");
             //yield return new WaitForSeconds(2);
             //Instantiate(Particles, col.gameObject.transform.position, Quaternion.identity); 
+            Sound = col.gameObject.GetComponent<AudioSource>();
+            Sound.Play();
             Destroy(col.gameObject);
-            //Sound = GetComponent<AudioSource>();
-            // Sound.Play(0);
+            
 
         }
     }
