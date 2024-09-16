@@ -22,8 +22,8 @@ public class Playback : MonoBehaviour
     public bool Play_Game;
     public string user;
     string User_File;
-    private float[] delay = { 100.0f, 110.0f, 120.0f, 130.0f, 90.0f };
-    private float[] delay2 = { 80.0f, 95.0f, 115.0f, 135.0f, 125.0f };
+    private float[] delay = { 10.0f,100.0f, 210.0f, 330.0f, 460.0f, 540.0f };
+    private float[] delay2 = { 10.0f, 80.0f, 175.0f, 290.0f, 425.0f, 550.0f };
     private string start_time;
     private DateTime Starting_time;
     private Color originalColor;

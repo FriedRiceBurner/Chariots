@@ -704,7 +704,7 @@ Transform:
   m_GameObject: {fileID: 696065097}
   serializedVersion: 2
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: -5.1381297, y: 1.9264092, z: -1.3262367}
+  m_LocalPosition: {x: -3.88, y: 2.4, z: -1.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1058,12 +1058,12 @@ MonoBehaviour:
   Videoscreen: {fileID: 2060413830}
   spawners: []
   Play_Video: 0
-  Play_Haptics: 0
-  Play_Visuals: 1
+  Play_Haptics: 1
+  Play_Visuals: 0
   Left: {fileID: 2006870141}
   Right: {fileID: 1585752914}
   Play_Game: 0
-  user: Testingtimes
+  user: User_1_PH
 --- !u!4 &1113237536
 Transform:
   m_ObjectHideFlags: 0

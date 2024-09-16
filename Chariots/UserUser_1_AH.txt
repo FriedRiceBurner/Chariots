@@ -1,0 +1,5 @@
+Game started at2024-09-16 13:48:51
+Passerby detected at00:02:26 seconds on the Left
+Passerby detected at00:06:06 seconds on the Right
+Passerby detected at00:06:53 seconds on the Right
+Passerby detected at00:06:56 seconds on the Left

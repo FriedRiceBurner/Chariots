@@ -1448,12 +1448,20 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 821381495}
     - target: {fileID: 1312114207183630935, guid: f65b8cc998b1f7b4dbd9068b730fe52d, type: 3}
+      propertyPath: user
+      value: User_1_AH
+      objectReference: {fileID: 0}
+    - target: {fileID: 1312114207183630935, guid: f65b8cc998b1f7b4dbd9068b730fe52d, type: 3}
       propertyPath: Right
       value: 
       objectReference: {fileID: 78316295}
     - target: {fileID: 1312114207183630935, guid: f65b8cc998b1f7b4dbd9068b730fe52d, type: 3}
+      propertyPath: Play_Haptics
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1312114207183630935, guid: f65b8cc998b1f7b4dbd9068b730fe52d, type: 3}
       propertyPath: Play_Visuals
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1312114207183630935, guid: f65b8cc998b1f7b4dbd9068b730fe52d, type: 3}
       propertyPath: spawners.Array.data[0]

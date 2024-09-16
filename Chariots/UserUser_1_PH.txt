@@ -1,0 +1,5 @@
+Video started at2024-09-16 13:34:15
+Passerby detected at00:01:40 seconds on the Left
+Passerby detected at00:01:50 seconds on the Right
+Passerby detected at00:02:57 seconds on the Left
+Passerby detected at00:05:24 seconds on the Left
