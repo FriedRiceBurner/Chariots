@@ -177,7 +177,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fruit: {fileID: 4622042781722049566}
   rotationSpeed: 15
-  speed: 30
+  speed: 25
   Target: {fileID: 4853024122185584745, guid: d50da637598757344a62e30ff792c1ca, type: 3}
   sound: {fileID: 5241280853836597878}
 --- !u!82 &5241280853836597878

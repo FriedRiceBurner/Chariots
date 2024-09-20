@@ -35,41 +35,39 @@ void hi(){
   int side= uduino.charToInt(uduino.getParameter(0));
   switch(side){
     case 1:
-    delay(108509);
+    delay(147759);
     digitalWrite(behind,HIGH); //stimuli 1
     delay(750);
     digitalWrite(behind,LOW);
-    delay(13188);
+    delay(22438);
     digitalWrite(side,HIGH); //stimuli 2
     delay(750);
     digitalWrite(side,LOW);
-    delay(349229);
+    
   
     break;
 
     case 2:
-    delay(98765);
+    delay(118015);
     digitalWrite(behind,HIGH); //stimuli 3
     delay(750);
     digitalWrite(behind,LOW);
-    delay(76543);
+    delay(115793);
     digitalWrite(behind,HIGH);//stimuli 4
     delay(750);
     digitalWrite(behind,LOW);
-    delay(146236);
+    delay(175486);
     digitalWrite(behind,HIGH);//stimuli 5
     delay(750);
     digitalWrite(behind,LOW);
     break;
 
     case 3:
-    delay(145000);
+    delay(109250);
     digitalWrite(behind,HIGH); //stimuli 1
     delay(750);
     digitalWrite(behind,LOW);
-    delay(123456);
-    digitalWrite(behind,LOW);
-    delay(146236);
+    delay(114250);
     digitalWrite(behind,HIGH);//stimuli 5
     delay(750);
     digitalWrite(behind,LOW);
@@ -77,15 +75,15 @@ void hi(){
    
     case 4:
 
-    delay(13188);
+    delay(12250);
     digitalWrite(side,HIGH); //stimuli 2
     delay(750);
     digitalWrite(side,LOW);
-    delay(349229);
+    delay(299250);
     digitalWrite(front,HIGH); //stimuli 3
     delay(750);
     digitalWrite(front,LOW);
-    delay(47738);
+    delay(59250);
     digitalWrite(behind,HIGH);//stimuli 4
     delay(750);
     digitalWrite(behind,LOW);
