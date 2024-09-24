@@ -18,8 +18,8 @@ void setup() {
   uduino.useSerial(true);         // default is true
 
   // mendatory function
-  uduino.connectWifi("TMobileWiFi-2.4GHz", "416356373337");
-  //uduino.connectWifi("NETGEAR75", "orangeballoon353");
+  //uduino.connectWifi("TMobileWiFi-2.4GHz", "416356373337");
+  uduino.connectWifi("NETGEAR75", "orangeballoon353");
   pinMode(13,OUTPUT);
   pinMode(14,OUTPUT);
   pinMode(27,OUTPUT);
@@ -34,60 +34,60 @@ void hi(){
   int side= uduino.charToInt(uduino.getParameter(0));
   switch(side){
     case 1:
-    delay(9000);
+    delay(147759);
     digitalWrite(behind,HIGH); //stimuli 1
-    Serial.println("BUZZ!");
-    delay(900);
+    delay(750);
     digitalWrite(behind,LOW);
-    delay(45000);
+    delay(22438);
     digitalWrite(side,HIGH); //stimuli 2
-    Serial.println("BUZZ!");
-    delay(900);
+    delay(750);
     digitalWrite(side,LOW);
-    delay(278000);
-    digitalWrite(front,HIGH); //stimuli 3
-    Serial.println("BUZZ!");
-    delay(900);
-    digitalWrite(front,LOW);
-    delay(59000);
-    digitalWrite(behind,HIGH);//stimuli 4
-    Serial.println("BUZZ!");
-    delay(900);
-    digitalWrite(behind,LOW);
-    delay(60000);
-    digitalWrite(side,HIGH);//stimuli 5
-    Serial.println("BUZZ!");
-    delay(900);
-    digitalWrite(side,LOW);
+    
+  
     break;
 
     case 2:
-    delay(85000);
-    digitalWrite(behind,HIGH); //stimuli 1
-    Serial.println("BUZZ!");
-    delay(900);
-    digitalWrite(behind,LOW);
-    delay(50000);
-    digitalWrite(behind,HIGH); //stimuli 2
-    Serial.println("BUZZ!");
-    delay(900);
-    digitalWrite(behind,LOW);
-    delay(283000);
+    delay(118015);
     digitalWrite(behind,HIGH); //stimuli 3
-    Serial.println("BUZZ!");
-    delay(900);
+    delay(750);
     digitalWrite(behind,LOW);
-    delay(69000);
+    delay(115793);
     digitalWrite(behind,HIGH);//stimuli 4
-    Serial.println("BUZZ!");
-    delay(900);
+    delay(750);
     digitalWrite(behind,LOW);
-    delay(75000);
+    delay(175486);
     digitalWrite(behind,HIGH);//stimuli 5
-    Serial.println("BUZZ!");
-    delay(900);
+    delay(750);
     digitalWrite(behind,LOW);
     break;
+
+    case 3:
+    delay(109250);
+    digitalWrite(behind,HIGH); //stimuli 1
+    delay(750);
+    digitalWrite(behind,LOW);
+    delay(114250);
+    digitalWrite(behind,HIGH);//stimuli 5
+    delay(750);
+    digitalWrite(behind,LOW);
+    break;
+   
+    case 4:
+
+    delay(12250);
+    digitalWrite(side,HIGH); //stimuli 2
+    delay(750);
+    digitalWrite(side,LOW);
+    delay(299250);
+    digitalWrite(front,HIGH); //stimuli 3
+    delay(750);
+    digitalWrite(front,LOW);
+    delay(59250);
+    digitalWrite(behind,HIGH);//stimuli 4
+    delay(750);
+    digitalWrite(behind,LOW);
+    break;
+
 
     default:
     return;

@@ -114,8 +114,6 @@ public class Playback : MonoBehaviour
         if (mode == 1)
         {
             File.WriteAllText(User_File, "Video started at" + start_time + "\n");
-
-
         }
         else
         {
