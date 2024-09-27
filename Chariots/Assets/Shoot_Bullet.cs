@@ -30,6 +30,8 @@ public class Shoot_Bullet : MonoBehaviour
         shuriken.AddForce(controller.transform.forward * speed);
     }
 
+    
+
 
 }
 

@@ -32,7 +32,6 @@ public class Playback : MonoBehaviour
     private DateTime intrusion_time;
     private DateTime[] haptic_intrusion;
     private DateTime[] haptic_intrusion2;
-    private int f = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -131,7 +130,7 @@ public class Playback : MonoBehaviour
             for (int i = 0; i < delay.Length-1; i++)
             {
                 Debug.Log("Here!");
-                StartCoroutine(AdjustTransparencyCoroutine(delay[i], side[i]));
+                StartCoroutine(AdjustTransparency(delay[i], side[i]));
             }
         }
 
@@ -141,24 +140,16 @@ public class Playback : MonoBehaviour
             for (int i = 0; i < delay2.Length-1; i++)
             {
                 Debug.Log("Here!");
-                StartCoroutine(AdjustTransparencyCoroutine(delay[i], side[i]));
+                StartCoroutine(AdjustTransparency(delay[i], side[i]));
             }
         }
     }
 
-    private IEnumerator AdjustTransparencyCoroutine(float delay, GameObject side)
-    {
-        // Wait for the specified amount of time
-        yield return new WaitForSeconds(delay);
 
-        // Change transparency of the material
-        StartCoroutine(AdjustTransparency(side));
-    }
-
-    private IEnumerator AdjustTransparency(GameObject side)
+    private IEnumerator AdjustTransparency(float delay, GameObject side)
     {
         Debug.Log("Here!");
-        // Create a new color with the desired alpha value
+        yield return new WaitForSeconds(delay);
         string time= System.DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
         intrusion_time = DateTime.Parse(time);
         side.SetActive(true);
@@ -169,6 +160,7 @@ public class Playback : MonoBehaviour
     private IEnumerator User_timer() {
         yield return new WaitForSeconds(600);
         Debug.Log("10 minutes has passed!!");
+        
 
     }
 

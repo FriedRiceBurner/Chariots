@@ -30,13 +30,6 @@ public class movement : MonoBehaviour
         fruit.AddForce(transform.forward * speed);
     }
 
-    private void OnTriggerEnter(Collider col)
-    {
-
-        if (col.gameObject.tag != "Fruit")
-        {
-            sound.Play(0);
-        }
-    }
+   
 
 }
