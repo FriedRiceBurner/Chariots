@@ -107,7 +107,7 @@ public class Playback : MonoBehaviour
     }
     public void begin(int mode)
     {
-        User_File = string.Concat("User", user, ".txt");
+        User_File = string.Concat("sub_", user, ".txt");
         start_time = System.DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
         Starting_time = DateTime.Parse(start_time);
         if (mode == 1)
