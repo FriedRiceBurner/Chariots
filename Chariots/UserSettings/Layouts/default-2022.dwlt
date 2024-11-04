@@ -840,9 +840,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0.6429463, y: 0.009189561, z: -0.0077156387, w: 0.7658173}
   m_Size:
-    m_Target: 6.7727585
+    m_Target: 5.898963
     speed: 2
-    m_Value: 6.7727585
+    m_Value: 5.898963
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -904,9 +904,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
-      m_ExpandedIDs: 28fbffff
+      m_SelectedIDs: 3c46fbff
+      m_LastClickedID: -309700
+      m_ExpandedIDs: 4246fbff8a4afbfff48dfcff3c8efcffb2a0fcffccdafcff24dbfcff2216fdffae1bfdffda50fffff251ffff40b6ffffc4bfffff28fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1073,7 +1073,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1081,15 +1081,15 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\josev\Documents\GitHub\Chariots\Chariots
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: ecb50000
-    m_LastClickedID: 46572
+    scrollPos: {x: 0, y: 58}
+    m_SelectedIDs: 04cd0000
+    m_LastClickedID: 52484
     m_ExpandedIDs: 00000000ecb5000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1143,9 +1143,9 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_SelectedInstanceIDs: 3c46fbff
+    m_LastClickedInstanceID: -309700
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000c4ff000026f7000024ba000036ba0000d009020000000000a6a50000
     m_RenameOverlay:
       m_UserAcceptedRename: 0

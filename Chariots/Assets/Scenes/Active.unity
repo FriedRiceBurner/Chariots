@@ -808,11 +808,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4, type: 3}
       propertyPath: uduinoWiFiBoards.Array.data[0].ip
-      value: 192.168.1.12
+      value: 192.168.1.195
       objectReference: {fileID: 0}
     - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4, type: 3}
       propertyPath: uduinoWiFiBoards.Array.data[1].ip
-      value: 192.168.1.13
+      value: 192.168.1.83
       objectReference: {fileID: 0}
     - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4, type: 3}
       propertyPath: activeExtentionsMap.keys.Array.size
@@ -1449,7 +1449,7 @@ PrefabInstance:
       objectReference: {fileID: 821381495}
     - target: {fileID: 1312114207183630935, guid: f65b8cc998b1f7b4dbd9068b730fe52d, type: 3}
       propertyPath: user
-      value: 2_AH
+      value: 4_AH
       objectReference: {fileID: 0}
     - target: {fileID: 1312114207183630935, guid: f65b8cc998b1f7b4dbd9068b730fe52d, type: 3}
       propertyPath: Right
