@@ -152,6 +152,7 @@ public class Playback : MonoBehaviour
         yield return new WaitForSeconds(delay);
         string time= System.DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
         intrusion_time = DateTime.Parse(time);
+        Debug.Log("Here!");
         side.SetActive(true);
         yield return new WaitForSeconds(1.0f);
         side.SetActive(false);

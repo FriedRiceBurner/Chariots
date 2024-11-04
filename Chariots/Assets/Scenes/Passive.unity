@@ -249,7 +249,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _buttonClickActions:
   - Title: log
-    Button: 32768
+    Button: 49152
     ButtonMode: 1
     Callback:
       m_PersistentCalls:
@@ -267,7 +267,7 @@ MonoBehaviour:
             m_BoolArgument: 1
           m_CallState: 2
   - Title: log
-    Button: 8388608
+    Button: 8404992
     ButtonMode: 1
     Callback:
       m_PersistentCalls:
@@ -971,7 +971,7 @@ MonoBehaviour:
   Play_Game: 0
   Left: {fileID: 2006870141}
   Right: {fileID: 1585752914}
-  user: lighting
+  user: 3_PH
 --- !u!4 &1113237536
 Transform:
   m_ObjectHideFlags: 0
