@@ -1,0 +1,19 @@
+Video started at2024-11-06 13:04:35.408
+Passerby detected at00:00:23.6080000 seconds on the Left
+Time to respond(Visual):00:00:13.6040000
+Passerby detected at00:00:23.6120000 seconds on the Right
+Time to respond(Visual):00:00:13.6080000
+Passerby detected at00:01:41.5710000 seconds on the Right
+Time to respond(Visual):00:00:01.5600000
+Passerby detected at00:03:30.9440000 seconds on the Right
+Time to respond(Visual):00:00:00.9320000
+Passerby detected at00:05:31.0130000 seconds on the Left
+Time to respond(Visual):00:00:01.0030000
+Passerby detected at00:05:31.1660000 seconds on the Right
+Time to respond(Visual):00:00:01.1560000
+Passerby detected at00:07:40.6990000 seconds on the Right
+Time to respond(Visual):00:00:00.6970000
+Passerby detected at00:07:47.5610000 seconds on the Left
+Time to respond(Visual):00:00:07.5590000
+Passerby detected at00:07:47.5630000 seconds on the Right
+Time to respond(Visual):00:00:07.5610000

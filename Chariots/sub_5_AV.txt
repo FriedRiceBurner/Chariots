@@ -1,7 +1,11 @@
-Game started at2024-11-06 13:45:30.871
-Passerby detected at00:00:03.3690000 seconds on the Left
-Time to respond(Visual):739195.13:45:34.2400000
-Passerby detected at00:03:32.5270000 seconds on the Right
-Time to respond(Visual):00:00:02.5210000
-Passerby detected at00:05:31.8420000 seconds on the Left
-Time to respond(Visual):00:00:01.8380000
+Game started at2024-11-07 15:50:29.439
+Passerby detected at00:00:12.7820000 seconds on the Left
+Time to respond(Visual):00:00:02.7720000
+Passerby detected at00:01:41.9950000 seconds on the Right
+Time to respond(Visual):00:00:01.9910000
+Passerby detected at00:03:31.4120000 seconds on the Right
+Time to respond(Visual):00:00:01.4070000
+Passerby detected at00:05:32.5790000 seconds on the Left
+Time to respond(Visual):00:00:02.5750000
+Passerby detected at00:07:41.2500000 seconds on the Right
+Time to respond(Visual):00:00:01.2380000
