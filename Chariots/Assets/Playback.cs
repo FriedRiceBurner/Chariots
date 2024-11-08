@@ -32,6 +32,7 @@ public class Playback : MonoBehaviour
     private DateTime intrusion_time;
     private DateTime[] haptic_intrusion;
     private DateTime[] haptic_intrusion2;
+    private string path_file;
     // Start is called before the first frame update
     void Start()
     {
@@ -101,7 +102,7 @@ public class Playback : MonoBehaviour
         TimeSpan x = press_time - Starting_time;
         TimeSpan y = press_time - intrusion_time;
         
-        File.AppendAllText(User_File, "Passerby detected at" + x + " seconds on the " +side + "\n" + "Time to respond(Visual):" + y+ 
+        File.AppendAllText(path_file, "Passerby detected at" + x + " seconds on the " +side + "\n" + "Time to respond(Visual):" + y+ 
             "\n");
        
     }
@@ -110,14 +111,14 @@ public class Playback : MonoBehaviour
         User_File = string.Concat("sub_", user, ".txt");
         start_time = System.DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
         Starting_time = DateTime.Parse(start_time);
-        string path_file= "subjects/" +User_File ;
+        path_file= "subjects/" +User_File ;
         if (mode == 1)
         {
             File.AppendAllText(path_file, "Video started at" + start_time + "\n");
         }
         else
         {
-            File.AppendAllText(User_File, "Game started at" + start_time + "\n");
+            File.AppendAllText(path_file, "Game started at" + start_time + "\n");
         }
 
        
