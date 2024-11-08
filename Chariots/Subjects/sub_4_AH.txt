@@ -1,0 +1,9 @@
+Game started at2024-11-04 12:48:57.828
+Passerby detected at00:01:51.0850000 seconds on the Right
+Time to respond(Visual):739193.12:50:48.9130000
+Passerby detected at00:03:45.6810000 seconds on the Right
+Time to respond(Visual):739193.12:52:43.5090000
+Passerby detected at00:05:15.1470000 seconds on the Left
+Time to respond(Visual):739193.12:54:12.9750000
+Passerby detected at00:06:13.5660000 seconds on the Left
+Time to respond(Visual):739193.12:55:11.3940000

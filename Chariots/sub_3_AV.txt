@@ -1,3 +1,0 @@
-Game started at2024-11-04 09:55:00.354
-Passerby detected at00:07:41.3990000 seconds on the Right
-Time to respond(Visual):00:00:01.3920000

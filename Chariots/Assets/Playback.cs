@@ -110,13 +110,14 @@ public class Playback : MonoBehaviour
         User_File = string.Concat("sub_", user, ".txt");
         start_time = System.DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
         Starting_time = DateTime.Parse(start_time);
+        string path_file= "subjects/" +User_File ;
         if (mode == 1)
         {
-            File.WriteAllText(User_File, "Video started at" + start_time + "\n");
+            File.AppendAllText(path_file, "Video started at" + start_time + "\n");
         }
         else
         {
-            File.WriteAllText(User_File, "Game started at" + start_time + "\n");
+            File.AppendAllText(User_File, "Game started at" + start_time + "\n");
         }
 
        

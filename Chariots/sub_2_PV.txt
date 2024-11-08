@@ -1,9 +1,0 @@
-Video started at2024-10-06 12:45:26.135
-Passerby detected at00:00:11.9800000 seconds on the Left
-Time to respond(Visual):00:00:01.9780000
-Passerby detected at00:00:11.9810000 seconds on the Right
-Time to respond(Visual):00:00:01.9790000
-Passerby detected at00:03:13.6100000 seconds on the Left
-Time to respond(Visual):00:01:33.6000000
-Passerby detected at00:03:13.6140000 seconds on the Right
-Time to respond(Visual):00:01:33.6040000
